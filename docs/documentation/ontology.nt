@@ -1,0 +1,572 @@
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction> <http://www.w3.org/2000/01/rdf-schema#comment> "Flight satisfaction ontology\n\nThe ontology represents and organizes knowledge related to satisfaction surveys of flights, focusing specifically on passengers' opinions about Qatar Airways and Ryanair."@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Jose Luís Ferrer Rodríguez"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasDestination
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasDestination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasDestination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasDestination> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Flight> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasDestination> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Destination> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasDestination> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasOrigin> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasDestination> <http://www.w3.org/2000/01/rdf-schema#comment> "Property to relate a flight with its destination"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasDestination> <http://www.w3.org/2000/01/rdf-schema#label> "hasDestination"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasNegativeSurvey
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasNegativeSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasNegativeSurvey> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasNegativeSurvey> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasPositiveSurvey> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasNegativeSurvey> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Rating> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasNegativeSurvey> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Negative> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasNegativeSurvey> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasPositiveSurvey> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasNegativeSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "Property to relate the score with the negative survey"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasNegativeSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "hasNegativeSurvey"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasOrigin
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Flight> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Origin> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#comment> "Property to relate a flight with its origin"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#label> "hasOrigin"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasPositiveSurvey
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasPositiveSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasPositiveSurvey> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasPositiveSurvey> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Rating> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasPositiveSurvey> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Positive> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasPositiveSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "Property to relate the score with the positive survey"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasPositiveSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "hasPositiveSurvey"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasSurvey
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasSurvey> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Airline> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasSurvey> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "Property to relate an airline with a survey" .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "hasSurvey"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#isOnDate
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#isOnDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#isOnDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#isOnDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Date> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#isOnDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Flight> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#isOnDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#isOnDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Property to relate a date with a survey or flight"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#isOnDate> <http://www.w3.org/2000/01/rdf-schema#label> "isOnDate"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasCountry
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasCountry> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#TravelerCountry> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Data property containing Country value for traveler"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasCountry> <http://www.w3.org/2000/01/rdf-schema#label> "hasCountry"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasDate
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Day> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Month> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Year> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Data property containing DateTime value"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasDate> <http://www.w3.org/2000/01/rdf-schema#label> "hasDate"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasId
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasId> <http://www.w3.org/2000/01/rdf-schema#comment> "Data property containing Id value on Survey"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasId> <http://www.w3.org/2000/01/rdf-schema#label> "hasId"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasRating
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Rating> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasRating> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2001/XMLSchema#maxInclusive> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2001/XMLSchema#minInclusive> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Data property containing Rating value in range (1-10) for survey"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasRating> <http://www.w3.org/2000/01/rdf-schema#label> "hasRating"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#isRecommendated
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#isRecommendated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#isRecommendated> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#isRecommendated> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Recommendation> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#isRecommendated> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#isRecommendated> <http://www.w3.org/2000/01/rdf-schema#comment> "Data property containing boolean value for recommended flight"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#isRecommendated> <http://www.w3.org/2000/01/rdf-schema#label> "isRecommended"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#isVerificated
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#isVerificated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#isVerificated> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Verification> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#isVerificated> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#isVerificated> <http://www.w3.org/2000/01/rdf-schema#comment> "Data property containing boolean value for checked survey"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#isVerificated> <http://www.w3.org/2000/01/rdf-schema#label> "isVerificated"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Aircraft
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Aircraft> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Flight> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Aircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "Class Aircraft"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Aircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Airline
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Airline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Airline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Flight> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Airline> <http://www.w3.org/2000/01/rdf-schema#comment> "Class Airline"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Airline> <http://www.w3.org/2000/01/rdf-schema#label> "Airline"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Business
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Business> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#TravelerType> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Business> <http://www.w3.org/2000/01/rdf-schema#comment> "Class Business"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Business> <http://www.w3.org/2000/01/rdf-schema#label> "Business"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#BusinessClass
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#BusinessClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#BusinessClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#SeatType> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#BusinessClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Class BusinessClass"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#BusinessClass> <http://www.w3.org/2000/01/rdf-schema#label> "BusinessClass"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Comment
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Comment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Comment> <http://www.w3.org/2000/01/rdf-schema#comment> "Class Comment"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Comment> <http://www.w3.org/2000/01/rdf-schema#label> "Comment"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#CoupleLeisure
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#CoupleLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#CoupleLeisure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#TravelerType> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#CoupleLeisure> <http://www.w3.org/2000/01/rdf-schema#comment> "Class CoupleLeisure"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#CoupleLeisure> <http://www.w3.org/2000/01/rdf-schema#label> "CoupleLeisure"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Date
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Date> <http://www.w3.org/2000/01/rdf-schema#comment> "Class Date"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Date> <http://www.w3.org/2000/01/rdf-schema#label> "Date"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Date> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Date" .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Day
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Day> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Day> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Date> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Day> <http://www.w3.org/2000/01/rdf-schema#comment> "Class Day"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Day> <http://www.w3.org/2000/01/rdf-schema#label> "Day"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Day> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Day" .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Destination
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Destination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Destination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Location> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Destination> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Origin> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Destination> <http://www.w3.org/2000/01/rdf-schema#comment> "Class Destination"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Destination> <http://www.w3.org/2000/01/rdf-schema#label> "Destination"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#EconomyClass
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#EconomyClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#EconomyClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#SeatType> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#EconomyClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Class EconomyClass"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#EconomyClass> <http://www.w3.org/2000/01/rdf-schema#label> "EconomyClass"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#FamilyLeisure
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#FamilyLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#FamilyLeisure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#TravelerType> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#FamilyLeisure> <http://www.w3.org/2000/01/rdf-schema#comment> "Class FamilyLeisure"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#FamilyLeisure> <http://www.w3.org/2000/01/rdf-schema#label> "FamilyLeisure"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#FirstClass
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#FirstClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#FirstClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#SeatType> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#FirstClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Class FirstClass"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#FirstClass> <http://www.w3.org/2000/01/rdf-schema#label> "FirstClass"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Flight
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Flight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Destination> .
+_:genid6 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasDestination> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Origin> .
+_:genid7 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasOrigin> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Flight> <http://www.w3.org/2000/01/rdf-schema#comment> "Class Flight"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Flight> <http://www.w3.org/2000/01/rdf-schema#label> "Flight"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Location
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Flight> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "Class Location"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Month
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Month> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Month> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Date> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Month> <http://www.w3.org/2000/01/rdf-schema#comment> "Class Month" .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Month> <http://www.w3.org/2000/01/rdf-schema#label> "Month"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Month> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Month" .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Negative
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Negative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Negative> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2001/XMLSchema#maxExclusive> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasRating> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Negative> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey_classification> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Negative> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Positive> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Negative> <http://www.w3.org/2000/01/rdf-schema#comment> "Class Negative"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Negative> <http://www.w3.org/2000/01/rdf-schema#label> "Negative"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Origin
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Origin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Origin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Location> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Origin> <http://www.w3.org/2000/01/rdf-schema#comment> "Class Origin"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Origin> <http://www.w3.org/2000/01/rdf-schema#label> "Origin"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Positive
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Positive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Positive> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2001/XMLSchema#minInclusive> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasRating> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Positive> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey_classification> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Positive> <http://www.w3.org/2000/01/rdf-schema#comment> "Class Positive"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Positive> <http://www.w3.org/2000/01/rdf-schema#label> "Positive"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#PremiumEconomy
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#PremiumEconomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#PremiumEconomy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#SeatType> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#PremiumEconomy> <http://www.w3.org/2000/01/rdf-schema#comment> "Class PremiumEconomy"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#PremiumEconomy> <http://www.w3.org/2000/01/rdf-schema#label> "PremiumEconomy"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Rating
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Rating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Rating> <http://www.w3.org/2000/01/rdf-schema#comment> "Class Rating"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Rating> <http://www.w3.org/2000/01/rdf-schema#label> "Rating"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Recommendation
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Recommendation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Recommendation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Flight> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Recommendation> <http://www.w3.org/2000/01/rdf-schema#comment> "Class Recomendation"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Recommendation> <http://www.w3.org/2000/01/rdf-schema#label> "Recommendation"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#SeatType
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#SeatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#SeatType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Flight> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#SeatType> <http://www.w3.org/2000/01/rdf-schema#comment> "Class SeatType"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#SeatType> <http://www.w3.org/2000/01/rdf-schema#label> "SeatType"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#SoloLeisure
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#SoloLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#SoloLeisure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#TravelerType> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#SoloLeisure> <http://www.w3.org/2000/01/rdf-schema#comment> "Class SoloLeisure"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#SoloLeisure> <http://www.w3.org/2000/01/rdf-schema#label> "SoloLeisure"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid16 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasId> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey> <http://www.w3.org/2000/01/rdf-schema#comment> "Class Survey"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey> <http://www.w3.org/2000/01/rdf-schema#label> "Survey"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey_classification
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey_classification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey_classification> <http://www.w3.org/2000/01/rdf-schema#comment> "Class Survey_classification"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey_classification> <http://www.w3.org/2000/01/rdf-schema#label> "Survey_classification"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Title
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Title> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Title> <http://www.w3.org/2000/01/rdf-schema#comment> "Class Title"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Title> <http://www.w3.org/2000/01/rdf-schema#label> "Title"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Traveler
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Traveler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Traveler> <http://www.w3.org/2000/01/rdf-schema#comment> "Class Traveler"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Traveler> <http://www.w3.org/2000/01/rdf-schema#label> "Traveler"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#TravelerCountry
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#TravelerCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#TravelerCountry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Traveler> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#TravelerCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Class TravelerCountry"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#TravelerCountry> <http://www.w3.org/2000/01/rdf-schema#label> "TravelerCountry"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#TravelerCountry> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Category:Countries" .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#TravelerType
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#TravelerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#TravelerType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Traveler> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#TravelerType> <http://www.w3.org/2000/01/rdf-schema#comment> "Class TravelerType"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#TravelerType> <http://www.w3.org/2000/01/rdf-schema#label> "TravelerType"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Verification
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Verification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Verification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Verification> <http://www.w3.org/2000/01/rdf-schema#comment> "Class Verification"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Verification> <http://www.w3.org/2000/01/rdf-schema#label> "Verification"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Year
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Year> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Date> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Year> <http://www.w3.org/2000/01/rdf-schema#comment> "Class Year" .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Year> <http://www.w3.org/2000/01/rdf-schema#label> "Year"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Year> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Year" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Boeing_737
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Boeing_737> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Boeing_737> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Aircraft> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Boeing_737> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance representing Aircraft"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Boeing_737> <http://www.w3.org/2000/01/rdf-schema#label> "Boeing_737"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Qatar_Airways
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Qatar_Airways> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Qatar_Airways> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Airline> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Qatar_Airways> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasSurvey> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey1> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Qatar_Airways> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance representing Airline"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Qatar_Airways> <http://www.w3.org/2000/01/rdf-schema#label> "Qatar_Airways"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Ryanair
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Ryanair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Ryanair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Airline> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Ryanair> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasSurvey> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey2> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Ryanair> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance representing Airline"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Ryanair> <http://www.w3.org/2000/01/rdf-schema#label> "Ryanair"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey1
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey1> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasId> "1" .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey1> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasRating> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey1> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance representing Survey" .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey1> <http://www.w3.org/2000/01/rdf-schema#label> "Survey1"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey2
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey2> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasId> "2" .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey2> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasRating> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey2> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance representing Survey"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey2> <http://www.w3.org/2000/01/rdf-schema#label> "Survey2"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Traveler1
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Traveler1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Traveler1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Traveler> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Traveler1> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasCountry> "United Kingdom" .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Traveler1> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance representing Traveler" .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Traveler1> <http://www.w3.org/2000/01/rdf-schema#label> "Traveler1"@en .
+# 
+# http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#United_Kingdom
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#United_Kingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#United_Kingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Destination> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#United_Kingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#TravelerCountry> .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#United_Kingdom> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance representing country"@en .
+<http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#United_Kingdom> <http://www.w3.org/2000/01/rdf-schema#label> "United_Kingdom"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#S> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#X> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#R> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid17 <http://www.w3.org/2000/01/rdf-schema#comment> "Rule to identify a survey of an airline based on a date."@en .
+_:genid17 <http://www.w3.org/2000/01/rdf-schema#label> "Find_Survey_By_Airline&Date"@en .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid17 <http://www.w3.org/2003/11/swrl#body> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#S> .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#D> .
+_:genid19 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#isOnDate> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#D> .
+_:genid21 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Date> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#S> .
+_:genid23 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#A> .
+_:genid23 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#hasSurvey> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#S> .
+_:genid25 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#A> .
+_:genid27 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Airline> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/2003/11/swrl#head> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#A> .
+_:genid29 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Airline> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#S> .
+_:genid31 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid32 <http://www.w3.org/2000/01/rdf-schema#comment> "Rule to classify a survey as positive based on whether the passenger has indicated a rating of 5 or higher."@en .
+_:genid32 <http://www.w3.org/2000/01/rdf-schema#label> "PositiveType_Survey_By_Rating"@en .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid32 <http://www.w3.org/2003/11/swrl#body> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid34 .
+_:genid34 <http://www.w3.org/2003/11/swrl#arguments> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#R> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+<http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid38 .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#R> .
+_:genid38 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Rating> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
+_:genid40 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> .
+_:genid40 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey_classification> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid32 <http://www.w3.org/2003/11/swrl#head> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid42 .
+_:genid42 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> .
+_:genid42 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Positive> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid43 <http://www.w3.org/2000/01/rdf-schema#comment> "Rule to classify a survey as negative based on whether the passenger has indicated a rating below 5"@en .
+_:genid43 <http://www.w3.org/2000/01/rdf-schema#label> "NegativeType_Survey_By_Rating"@en .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid43 <http://www.w3.org/2003/11/swrl#body> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid45 .
+_:genid45 <http://www.w3.org/2003/11/swrl#arguments> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#R> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+<http://www.w3.org/2003/11/swrlb#lessThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid49 .
+_:genid49 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#R> .
+_:genid49 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Rating> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid51 .
+_:genid51 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> .
+_:genid51 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Survey_classification> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid43 <http://www.w3.org/2003/11/swrl#head> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid53 .
+_:genid53 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> .
+_:genid53 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/ontologies/2024/3/Flight_satisfaction#Negative> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
